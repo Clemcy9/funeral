@@ -81,6 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+    # psql "postgres://default:gxNF9jPMH0tz@ep-spring-truth-a4zzc8m6.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
 }
 
 
