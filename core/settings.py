@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-d%t)hd#t0jxnh)j4em01)*z%nfqfrv&hjra-=xelqnx)ym7rnf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.43.33', '127.0.0.1', '.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -82,6 +82,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
     # psql "postgres://default:gxNF9jPMH0tz@ep-spring-truth-a4zzc8m6.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+    
 }
 
 
@@ -124,6 +125,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
+STATIC_ROOT= BASE_DIR / 'static_media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
