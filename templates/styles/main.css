@@ -3,6 +3,7 @@
    --article-text:#5E5B5B;
     --loving-memory-text:#7A7171;
     --font-orbitron:"Orbitron";
+    --label-color:#504D4D;
 }
 
 
@@ -36,6 +37,26 @@ body{
    font-size: 16px;
    color: var(--article-text);
 } 
+.button{
+   background-color: #336799; border-radius: 35px; border: none;
+   color: #f1f1f1;
+   margin: 20px auto;
+   display: block;
+   padding: 20px 60px;
+
+
+}
+.label-text{
+   font-family: "Montserrat";
+   font-weight: 500;
+   font-size: 15px;
+   margin: 10px 0;
+   color: var(--label-color);
+}
+textarea{
+   margin: 20px 0;
+   padding: 20px ;
+}
  .font{
     font-size: 40px;
     font-family: "Montserrat";
