@@ -60,6 +60,9 @@ textarea{
 .rounded-class{
    border-radius: 24px;
 }
+.max-width{
+   max-width: 50%;
+}
  .font{
     font-size: 40px;
     font-family: "Montserrat";
@@ -83,5 +86,10 @@ textarea{
  .gallery-images-text{
    font-family: var(--font-orbitron);
     color: var(--article-text); 
+ }
+ @media (min-width: 768px) {  /* Targets medium screens (768px and up) */
+   .wrapper {
+     max-width: 50%;
+   }
  }
  
