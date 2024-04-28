@@ -11,15 +11,32 @@ class Tributeform(forms.ModelForm):
 
     class Meta:
         model = Tribute
-        exclude = ['writer', 'tribute', 'date']
+        exclude = [ 'date']
 
         widgets ={
-            'relationship': forms.Select(
+            'writer': forms.TextInput(
                     attrs={
-                    'placeholder':"Relationship", 
-                    'data-form-field':"email", 
-                    'class':"form-control",
-                    'id':"email-contact-form-2-u9CjnDUwsQ"
+                    'name':"name",
+                    'id':"name" ,
+                    'class':"d-block w-100 py-3 rounded " 
+                }
+            ),
+            'relationship': forms.Select(
+                attrs={
+                    'type':"text",
+                    'name':"relationship",
+                    'id':"relationship",
+                    'class':"d-block w-100 py-3 rounded"
+                }
+            ),
+            'tribute': forms.Textarea(
+                attrs={
+                    'name':"tribute-message",
+                    'id':"tribute-message",
+                    'cols':"30",
+                    'rows':"10",
+                    'placeholder':"write your tribute",
+                    'class':"w-100"
                 }
             )
         }

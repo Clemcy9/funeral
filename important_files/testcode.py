@@ -19,4 +19,15 @@ def picture_post(request):
             return render(request, 'upload.html', {'image':image_url})
     else:
         return render(request, 'upload.html', {'form':form})
+
+
+# for cloudinary image config
+transformation=[
+    {"width": 200,
+      "height": 200, 
+      "crop": "auto", 
+      "gravity":"auto", 
+    #   "effect": "improve:50"
+      }
+    ]
 '''
