@@ -31,6 +31,7 @@ def index(request):
 
     return render(request, 'index.html', context)
 
+# this saves both url and image to local storage
 def picture_post(request):
     form = ImagePostForm()
 
@@ -51,6 +52,7 @@ def picture_post(request):
     else:
         return render(request, 'upload.html', {'form':form})
 
+# this only saves cloudinary image url to db
 @csrf_exempt
 def picture_post_api(request):
     if request.method == 'POST':
