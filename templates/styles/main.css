@@ -67,7 +67,7 @@ textarea{
    height: 200px;
    width: 100%;
    object-fit: cover;
-   max-width: 350px;
+   max-width: 400px;
 }
  .font{
     font-size: 40px;
