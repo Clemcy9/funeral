@@ -26,8 +26,9 @@
     <title>Home</title>
   </head>
   <body>
-    <div class="wrapper container">
-      <div
+    <div class="wrapper container-fluid" >
+      <div class="primary-bg container-fluid" >
+        <div
         class="container d-flex justify-content-center align-items-center"
         style="height: 100px; background-color: #f1f1f1"
       >
@@ -54,46 +55,49 @@
           alt=""
         />
       </div>
-
-      <!-- Biography     -->
-      <div class="container mt-5 pt-4">
-        <p class="heading mt-2">Biography</p>
-
-        <article class="article-text mb-4">
-          Mr Adebayo Awolaru was born on 24 April in Lagos State. From an early
-          age his passion for Education was evident, laying the foundation for a
-          remarkable journey ahead.
-        </article>
-
-        <article class="article-text mb-4">
-          Throughout their life, Mr Adebayo achieved great heights making
-          significant contributions that shaped the landscape of the educational
-          sector.
-        </article>
-
-        <article class="article-text mb-4">
-          Their dedication, innovation, and unwavering commitment to excellence
-          left an indelible mark on people and inspired countless individuals
-          around the globe.
-        </article>
       </div>
 
-      <!-- biography image with view more link to biography -->
-      <div class="container">
-        <img
-          src="https://media.istockphoto.com/id/1201144322/photo/headshot-of-african-american-male-in-glasses-posing-in-studio.jpg?s=612x612&w=0&k=20&c=1DYcA9va31VYVszx_pTOIBq_sL217ne1fDJaa_Now1Y="
-          alt="biography picture"
-          class="d-block mx-auto img-fluid rounded-class"
-        />
-
-        <a href="biography.html" class="view-more text-right d-block"
-          >View More</a
-        >
+      <!-- Biography     -->
+      <div class="primary-bg" >
+        <div class="container mt-5 pt-4">
+          <p class="heading mt-2">Biography</p>
+  
+          <article class="article-text mb-4">
+            Mr Adebayo Awolaru was born on 24 April in Lagos State. From an early
+            age his passion for Education was evident, laying the foundation for a
+            remarkable journey ahead.
+          </article>
+  
+          <article class="article-text mb-4">
+            Throughout their life, Mr Adebayo achieved great heights making
+            significant contributions that shaped the landscape of the educational
+            sector.
+          </article>
+  
+          <article class="article-text mb-4">
+            Their dedication, innovation, and unwavering commitment to excellence
+            left an indelible mark on people and inspired countless individuals
+            around the globe.
+          </article>
+        </div>
+  
+        <!-- biography image with view more link to biography -->
+        <div class="container">
+          <img
+            src="https://media.istockphoto.com/id/1201144322/photo/headshot-of-african-american-male-in-glasses-posing-in-studio.jpg?s=612x612&w=0&k=20&c=1DYcA9va31VYVszx_pTOIBq_sL217ne1fDJaa_Now1Y="
+            alt="biography picture"
+            class="d-block mx-auto img-fluid rounded-class"
+          />
+  
+          <a href="biography.html" class="view-more text-right d-block"
+            >View More</a
+          >
+        </div>
       </div>
 
       <!-- gallery section -->
-      <div class="container">
-        <p class="heading mb-5 pb-3" style="color: var(--sub-heading-text)">
+      <div class="container-fluid primary-bg mt-5 pb-3 pt-5  ">
+        <p class="heading mt-2 mb-5 pb-3" style="color: var(--sub-heading-text)">
           Memories <br />
           Captured In Time
         </p>
@@ -103,7 +107,7 @@
         image to fix bug
         -->
 
-        <div class="row">
+        <div class="row px-3" >
           <div class="col-6">
             <img
               src="https://media.istockphoto.com/id/1201144322/photo/headshot-of-african-american-male-in-glasses-posing-in-studio.jpg?s=612x612&w=0&k=20&c=1DYcA9va31VYVszx_pTOIBq_sL217ne1fDJaa_Now1Y="
@@ -172,7 +176,7 @@
 
       <!-- tribute section -->
       <div
-        class="container pb-3"
+        class="container-fluid pt-5 pb-3 primary-bg mt-5 "
       >
         <p class="heading mb-5" style="font-size: 24px">Hearfelt Tributes</p>
 
@@ -257,11 +261,11 @@
 
 
         <!-- created div to align share your tribute and view more on same row -->
-        <div class="d-flex align-items-center justify-content-between">
-          <button type="button" class="d-block text-white button">
+        <div class="row d-flex align-items-center px-3">
+          <a href="tributeList.html" class="d-block text-white button col-5 ">
             Share Your Tribute
-          </button>
-          <a href="tribute.html" class="d-block">View More</a>
+          </a>
+          <a href="tribute.html" class="d-block col-4 offset-3">View More</a>
         </div>
       </div>
     </div>
