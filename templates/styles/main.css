@@ -9,9 +9,11 @@
 
 
 body{
-    background-color:#f1f1f1;
+    background-color:white;
  }
-
+.primary-bg{
+   background-color: #f1f1f1;
+}
  .circle{
     background-color: #cfc5c5;
     height: 10px;
@@ -67,7 +69,20 @@ textarea{
    height: 200px;
    width: 100%;
    object-fit: cover;
-   max-width: 350px;
+   max-width: 300px;
+}
+.h-flex{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 2rem;
+}
+
+.img-flex{
+   display:flex;
+   flex-wrap: wrap;
+
+   /* justify-content: center; */
 }
  .font{
     font-size: 40px;
@@ -98,4 +113,21 @@ textarea{
      max-width: 50%;
    }
  }
- 
+
+ .upload-btn{
+   border: none;
+   background-color:  #336799;
+   color: white;
+   display: block;
+   padding: 10px 10px;
+   border-radius: 20px;
+   text-decoration: none;
+   cursor: pointer;
+   font-family: "Montserrat";
+   font-weight: 500;
+   font-size: 15px;
+   background-color:  #336799;
+ }
+ .upload-btn:hover{
+   color: white;
+ }
