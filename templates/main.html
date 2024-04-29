@@ -96,8 +96,8 @@
       </div>
 
       <!-- gallery section -->
-      <div class="container-fluid primary-bg mt-5 pb-3 pt-5  ">
-        <p class="heading mt-2 mb-5 pb-3" style="color: var(--sub-heading-text)">
+      <div class="container-fluid primary-bg mt-5 pb-3 pt-5 ">
+        <p class="heading mt-2 mb-5 pb-3" style="color: var(--sub-heading-text); ">
           Memories <br />
           Captured In Time
         </p>
@@ -107,7 +107,7 @@
         image to fix bug
         -->
 
-        <div class="row px-3" >
+        <div class="row px-3"  >
           <div class="col-6">
             <img
               src="https://img.freepik.com/free-photo/futuristic-moon-background_23-2150930694.jpg?size=626&ext=jpg&ga=GA1.1.120896997.1707432117&semt=ais="
@@ -151,24 +151,24 @@
         </div>
 
         <div
-          class="row container d-flex align-items-center justify-content-between my-5 px-4"
-        >
+          class=" my-5"
+        style=" width: 100%; display: flex;gap:1.5rem; justify-content: space-between ; align-items: center;" >
           <a
-            type="button"
-            class="text-center col-6 rounded-class"
+            
+            class="text-center rounded-class"
             style="
               border: 2px #336799 solid;
               color: #336799;
               font-weight: 400;
               padding: 0.7rem 0.4rem;
-              font-size: 20px;
-              text-decoration: none;
+              font-size: .8em;
+              text-decoration: none;width: 50%;
             "
             href="./gallery.html"
           >
             Upload photo
           </a>
-          <a href="gallery.html" class="col-6 text-center">
+          <a href="gallery.html" class=" text-center" style="color: #336799;font-size: .8em; width: 50%;" >
             View More in Gallery
           </a>
         </div>
@@ -183,8 +183,8 @@
          <!-- cross  fade bootstrap -->
     <div
     id="carouselFade"
-    class="carousel slide carousel-fade max-width "
-    data-ride="carousel" style="margin: 0 auto;"
+    class="carousel slide carousel-fade  "
+    data-ride="carousel" style=" margin: 0 auto; width: 100%;"
   >
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -245,7 +245,7 @@
       role="button"
       data-slide="prev"
     >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #336799;"></span>
       <span class="sr-only">Previous</span>
     </a>
     <a
@@ -254,19 +254,36 @@
       role="button"
       data-slide="next"
     >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #336799;" ></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
 
 
         <!-- created div to align share your tribute and view more on same row -->
-        <div class="row d-flex align-items-center px-3">
-          <a href="tributeList.html" class="d-block text-white button col-5 ">
-            Share Your Tribute
-          </a>
-          <a href="tribute.html" class="d-block col-4 offset-3">View More</a>
-        </div>
+        <div
+        class=" my-5"
+      style=" width: 100%; display: flex;gap:1.5rem; justify-content: space-between ; align-items: center;" >
+        <a
+          
+          class="text-center rounded-class"
+          style="
+            border: 2px #336799 solid;
+            background-color: #336799;
+            color: white;
+            font-weight: 400;
+            padding: 0.7rem 0.4rem;
+            font-size: .8em;
+            text-decoration: none;width: 50%;
+          "
+          href="./tributeList.html"
+        >
+          Share Your Tribute
+        </a>
+        <a href="./tributeList.html" class=" text-center" style="color: #336799;font-size: .8em; width: 50%;" >
+          View More
+        </a>
+      </div>
       </div>
     </div>
 
