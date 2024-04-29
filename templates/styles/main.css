@@ -128,4 +128,6 @@ gap: 2rem;
    font-size: 15px;
    background-color:  #336799;
  }
- 
+ .upload-btn:hover{
+   color: white;
+ }
