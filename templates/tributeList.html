@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <div class="container wrapper " >
+    <div
+      class="dropdown d-flex justify-content-between align-items-center py-5 container"
+      >
+      <h1 class="heading">Heartfelt Tributes</h1>
+      <button
+        class="btn p-2"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <img src="{% static 'my-assets/images/Vector.png'%}" alt="" />
+      </button>
+      <div
+        class="dropdown-menu"
+        style="border-radius: 20px"
+        aria-labelledby="dropdownMenuButton"
+      >
+        <a class="dropdown-item text-center" href="{% url 'upload:index' %}">Home</a>
+        <hr />
+        <a class="dropdown-item text-center" href="{% url 'upload:tribute_post' %}">Share Tribute</a>
+        <hr />
+        <a class="dropdown-item text-center" href="{% url 'upload:gallery' %}">Gallery</a>
+      </div>
+    </div>
+
+    <p class="article-text  " >
+      Explore the heartfelt tribute shared by friends, family and loved ones.
+    </p>
+
+
+    {% for tribute in tributes %}
+      <img
+      src="{% static 'my-assets/images/Quote Left.png' %}"
+      alt=""
+      class=" mt-5 d-block mx-auto"
+      />
+
+      <article class="text-center article-text">
+        {{tribute.tribute}}
+      </article>
+
+      <p
+        class="text-center label-text mt-3 "
+      >
+        {{tribute.writer}}
+      </p>
+      <p class="text-center font-body mb-5 " style="color: #504d4d;">Family Friend</p>
+    {% endfor %}
+
+      <img
+      src="../static/my-assets/images/Quote Left.png"
+      alt=""
+      class="d-block mx-auto"
+      />
+
+      <article class="text-center article-text">
+      Mr Adebayo Awolaru was born on 24 April in Lagos State. From an early
+      age his passion for Education was evident, laying the foundation for a
+      remarkable journey ahead.
+      </article>
+
+      <p
+      class="text-center label-text mt-3 "
+      >
+      Mr Idris Musa
+      </p>
+      <p class="text-center font-body mb-5" style="color: #504d4d">Family Friend</p>
+
+  </div>
+{% endblock %}
