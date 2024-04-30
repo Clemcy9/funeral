@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container pt-5 pb-5 mb-5 wrapper " >
+      <div class="d-flex justify-content-between mb-5 py-5">
+        <h3 class="heading">Gallery</h3>
+        <button type="submit" class="button label-text text-white" id="upload_widget">
+          Upload Photo
+        </button>
+      </div>
+
+      <!-- gallery images display -->
+      <div class="row">
+        {% for image in images %}
+        <img
+          src="{{image.url}}"
+          class="img-fluid col-6 my-4"
+          alt="adieu beloved"
+        />
+        {% endfor %}
+      </div>
+      <!-- second row -->
+      <div class="row">
+        <img
+          src="https://media.istockphoto.com/id/1201144322/photo/headshot-of-african-american-male-in-glasses-posing-in-studio.jpg?s=612x612&w=0&k=20&c=1DYcA9va31VYVszx_pTOIBq_sL217ne1fDJaa_Now1Y="
+          class="img-fluid col-6 my-4 "
+          alt=""
+        /><img
+          src="https://media.istockphoto.com/id/1201144322/photo/headshot-of-african-american-male-in-glasses-posing-in-studio.jpg?s=612x612&w=0&k=20&c=1DYcA9va31VYVszx_pTOIBq_sL217ne1fDJaa_Now1Y="
+          class="img-fluid col-6 my-4 "
+          alt=""
+        />
+      </div>
+
+      <!-- third row -->
+      <div class="row g-4">
+        <img
+          src="https://media.istockphoto.com/id/1201144322/photo/headshot-of-african-american-male-in-glasses-posing-in-studio.jpg?s=612x612&w=0&k=20&c=1DYcA9va31VYVszx_pTOIBq_sL217ne1fDJaa_Now1Y="
+          class="img-fluid col-6 my-4"
+          alt=""
+        /><img
+          src="https://media.istockphoto.com/id/1201144322/photo/headshot-of-african-american-male-in-glasses-posing-in-studio.jpg?s=612x612&w=0&k=20&c=1DYcA9va31VYVszx_pTOIBq_sL217ne1fDJaa_Now1Y="
+          class="img-fluid col-6 my-4 "
+          alt=""
+        />
+      </div>
+    </div>
+{% endblock %}

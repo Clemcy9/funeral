@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container wrapper ">
+      <h3 class="heading mt-5">Share Your Tribute</h3>
+      <p class="article-text" style="font-size: 24px">
+        Thank you for sharing your heartfelt tribute
+      </p>
+
+      <form action="" method="post">
+        <label for="name" class="label-text my-2" >Name </label>
+        <input type="text" name="name" id="name" class="d-block w-100 py-3 rounded " />
+
+        <!-- relationship status -->
+        <label for="relationshipStats" class="label-text my-2" >Relationship Status </label>
+        <input
+          type="text"
+          name="relationship"
+          id="relationship"
+          class="d-block w-100 py-3 rounded"
+        />
+
+        <!-- write your tribute      -->
+        <textarea
+          name="tribute-message"
+          id="tribute-message"
+          cols="30"
+          rows="10"
+          placeholder="write your tribute"
+          class="w-100"
+        ></textarea>
+
+        <button type="submit" class="mx-auto button my-5 " >Send</button>
+      </form>
+    </div>
+{% endblock %}
