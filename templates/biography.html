@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container wrapper">
+      <!-- navigation toogle -->
+      <div
+        class="dropdown d-flex justify-content-between align-items-center py-5 container"
+      >
+        <h1 class="heading">Biography</h1>
+        <button
+          class="btn p-2"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img src="../static/my-assets/images/Vector.png" alt="" />
+        </button>
+        <div
+          class="dropdown-menu"
+          style="border-radius: 20px"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item text-center" href="{% url 'upload:index' %}">Home</a>
+          <hr />
+          <a class="dropdown-item text-center" href="{% url 'upload:gallery' %}">Gallery</a>
+          <hr />
+          <a class="dropdown-item text-center" href="{% url 'upload:tributes' %}">Tributes</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <p class="h4 mt-5 sub-heading">His Early Days</p>
+
+        <article class="mb-3 article-text">
+          Mr Adebayo Awolaru was born on 24 April in Lagos State. From an early
+          age his passion for Education was evident, laying the foundation for a
+          remarkable journey ahead.
+        </article>
+        <article class="article-text mb-3">
+          Throughout their life, Mr Adebayo achieved great heights making
+          significant contributions that shaped the landscape of the educational
+          sector.
+        </article>
+
+        <article class="article-text mb-4">
+          Their dedication, innovation, and unwavering commitment to excellence
+          left an indelible mark on people and inspired countless individuals
+          around the globe.
+        </article>
+        <img
+          src="https://media.istockphoto.com/id/1201144322/photo/headshot-of-african-american-male-in-glasses-posing-in-studio.jpg?s=612x612&w=0&k=20&c=1DYcA9va31VYVszx_pTOIBq_sL217ne1fDJaa_Now1Y="
+          class="img-fluid d-block mx-auto rounded-class"
+          alt=""
+        />
+        <p
+          class="text-center my-4"
+          style="font-family: var(--font-orbitron); color: var(--article-text)"
+        >
+          Papa at his graduation Ceremony
+        </p>
+      </div>
+
+      <div class="container mt-5">
+        <h4 class="h4 mt-5 sub-heading">Papa Married Life</h4>
+        <div class="img-flex pt-4" >
+          <section class="">
+            <article class="article-text mb-4">
+              Mr Adebayo Awolaru was born on 24 April in Lagos State. From an
+              early age his passion for Education was evident, laying the
+              foundation for a remarkable journey ahead.
+            </article>
+
+            <article class="article-text mb-4">
+              Throughout their life, Mr Adebayo achieved great heights making
+              significant contributions that shaped the landscape of the
+              educational sector. Their dedication, innovation, and dedication.
+            </article>
+          </section>
+          <div class="" style=" margin: 0 auto; " >
+            <img
+              src="https://img.freepik.com/free-photo/colorful-leaves-against-simple-background_23-2149337928.jpg?size=626&ext=jpg&ga=GA1.1.120896997.1707432117&semt=ais"
+              class="img-fluid"
+              style="border-radius: 180px"
+              alt=""
+            />
+            <p
+              class="text-center mt-3"
+              style="
+                font-family: var(--font-orbitron);
+                color: var(--article-text);
+              "
+            >
+              Papa and Mama at their wedding
+            </p>
+        
+        </div>
+      </div>
+
+      <div class="container">
+        <h4 class="h4 mt-5 sub-heading">Papa Voluntering Life</h4>
+
+        <article class="article-text mb-4">
+          Mr Adebayo Awolaru was born on 24 April in Lagos State. From an early
+          age his passion for Education was evident, laying the foundation for a
+          remarkable journey ahead.
+        </article>
+        <article class="article-text mb-4">
+          Throughout their life, Mr Adebayo achieved great heights making
+          significant contributions that shaped the landscape of the educational
+          sector.
+        </article>
+        <article class="article-text mb-4">
+          Their dedication, innovation, and unwavering commitment to excellence
+          left an indelible mark on people and inspired countless individuals
+          around the globe.
+        </article>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col-6">
+          <img
+            src="https://img.freepik.com/free-photo/nature-landscape-with-black-sand-beach_23-2151380348.jpg?size=626&ext=jpg&ga=GA1.1.120896997.1707432117&semt=ais"
+            class="img-fluid img-fit rounded-class"
+            alt=""
+          />
+
+          <p
+            class="text-center"
+            style="
+              font-family: var(--font-orbitron);
+              color: var(--article-text);
+            "
+          >
+            Papa and Mama at their Wedding
+          </p>
+        </div>
+        <div class="col-6">
+          <img
+            src="https://img.freepik.com/free-photo/neon-tropical-monstera-leaf-banner_53876-138943.jpg?size=626&ext=jpg&ga=GA1.1.120896997.1707432117&semt=ais"
+            class="img-fluid img-fit rounded-class"
+            alt=""
+          />
+          <p
+            class="text-center"
+            style="
+              font-family: var(--font-orbitron);
+              color: var(--article-text);
+            "
+          >
+            Papa feeding Mama cake
+          </p>
+          <img
+            src="https://img.freepik.com/premium-photo/brightly-colored-painting-tree-mountainous-landscape-generative-ai_1028882-10809.jpg?size=626&ext=jpg&ga=GA1.1.120896997.1707432117&semt=ais"
+            class="img-fluid img-fit rounded-class"
+            alt=""
+          />
+          <p
+            class="text-center"
+            style="
+              font-family: var(--font-orbitron);
+              color: var(--article-text);
+            "
+          >
+            Papa feeding Mama cake
+          </p>
+        </div>
+      </div> -->
+
+
+      <div class="" style="display: flex; flex-wrap: wrap;
+      align-items: center; gap: 2.5px; "  >
+        <div class="" style="width: 49%; " >
+          <img
+            src="https://img.freepik.com/free-photo/trees-with-moon-background_1048-2654.jpg?size=626&ext=jpg&ga=GA1.2.120896997.1707432117&semt=ais"
+            class="rounded-class img-fit-onboarding " 
+            alt=""
+          />
+          <p class="text-center my-3 gallery-images-text">
+            Mr Adebayo & His Wife
+          </p>
+        </div>
+        <div class="" style=" width: 49%; ">
+          <img
+            src="https://img.freepik.com/free-photo/nature-landscape-with-black-sand-beach_23-2151380348.jpg?size=626&ext=jpg&ga=GA1.1.120896997.1707432117&semt=ais"
+            class="rounded-class img-fit-onboarding"
+            alt=""
+          />
+          <p class="text-center my-3 gallery-images-text">
+            Mr Adebayo & His Wife
+          </p>
+        </div>
+        <div class="" style="width: 49%; ">
+          <img
+            src="https://img.freepik.com/free-photo/sky-landscape-digital-art-style-with-tree-silhouette_23-2151120841.jpg?size=626&ext=jpg&ga=GA1.1.120896997.1707432117&semt=ais"
+            class="rounded-class img-fit-onboarding"
+            alt=""
+          />
+          <p class="text-center my-3 gallery-images-text">
+            Mr Adebayo & His Wife
+          </p>
+        </div>
+        <div class="" style="width: 49%; ">
+          <img
+            src="https://media.istockphoto.com/id/1201144322/photo/headshot-of-african-american-male-in-glasses-posing-in-studio.jpg?s=612x612&w=0&k=20&c=1DYcA9va31VYVszx_pTOIBq_sL217ne1fDJaa_Now1Y="
+            class=" rounded-class img-fit-onboarding"
+            alt=""
+          />
+          <p class="text-center my-3 gallery-images-text">
+            Mr Adebayo & His Wife
+          </p>
+        </div>
+      </div>
+    </div>
+{% endblock %}
