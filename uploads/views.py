@@ -10,7 +10,7 @@ from .models import ImageComment, ImagePost, Tribute, TributeComment
 
 
 def index(request):
-    images = ImagePost.objects.order_by('?')[:5]
+    images = ImagePost.objects.filter(caption__isnull=False).order_by('?')[:6]
     tributes = Tribute.objects.order_by('?')[:5]
     context = {
         'images':images,

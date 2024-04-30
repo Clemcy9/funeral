@@ -13,13 +13,14 @@ relation = [
     ('sibling', 'sibling'),
     ('friends', 'friends'),
     ('family_friend', 'family friend'),
-    ('friends_children', 'friends_of_children')
+    ('friends_of_children', 'friends of children')
 ]
 
 class ImagePost(models.Model):
     # title = models.CharField(max_length=30)
     # image = models.ImageField(upload_to='./static/uploads')
     # image = CloudinaryField('image')
+    caption = models.CharField(max_length=30, blank=True, null=True)
     url = models.URLField(blank=True, null=True)
     date = models.DateTimeField(default=timezone.now)
 

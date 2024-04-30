@@ -14,14 +14,14 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          <img src="{ static 'my-assets/images/Vector.png'}" alt="nav" />
+          <img src="{% static 'my-assets/images/Vector.png' %}" alt="nav" />
         </button>
         <div
           class="dropdown-menu"
           style="border-radius: 20px"
           aria-labelledby="dropdownMenuButton"
         >
-          <a class="dropdown-item text-center" href="{% url 'upload:index' %}">Home</a>
+          <a class="dropdown-item text-center" href="{% url 'upload:index_page' %}">Home</a>
           <hr />
           <a class="dropdown-item text-center" href="{% url 'upload:gallery' %}">Gallery</a>
           <hr />
@@ -36,27 +36,32 @@
 
 
       <form action="" method="post">
-        <label for="name" class="label-text my-2" >Name </label>
-        <input type="text" name="name" id="name" class="d-block w-100 py-3 rounded " style="border: solid grey 2px;" />
-
+        {% csrf_token %}
+        {% for field in form %}
+        {{field}}
+        {% endfor %}
+        
+        <!-- <label for="name" class="label-text my-2" >Name </label>
+        <input type="text" name="name" id="name" class="d-block w-100 py-3 rounded " style="border: solid grey 2px;" /> -->
+        
         <!-- relationship status -->
-        <label for="relationshipStats" class="label-text my-2" >Relationship Status </label>
+        <!-- <label for="relationship" class="label-text my-2" >Relationship Status </label>
         <input
           type="text"
           name="relationship"
           id="relationship"
           class="d-block w-100 py-3 rounded" style="border: solid grey 2px;"
-        />
+        /> -->
 
         <!-- write your tribute      -->
-        <textarea
+        <!-- <textarea
           name="tribute-message"
           id="tribute-message"
           cols="30"
           rows="10"
           placeholder="write your tribute"
           class="w-100" style="border: solid grey 2px;"
-        ></textarea>
+        ></textarea> -->
 
         <button type="submit" class="mx-auto button my-2 " >Send</button>
       </form>

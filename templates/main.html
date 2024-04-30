@@ -16,12 +16,12 @@
       <i class="text-center d-block article-text mt-5">In Loving Memory</i>
 
       <div class="container">
-        <p class="text-center heading">Elder Adebayo Awolaru</p>
-
+        <p class="text-center heading mb-0">Mr./Mrs.</p>
+        <p class="text-center heading">G.U Thompson</p>
         <p class="text-center article-text">
-          We celebrate the life, achievements, and lasting legacy of a
-          remarkable man who has touched the lives of many. Join us in honoring
-          his memory
+          We celebrate the lives, achievements, and lasting legacies of a
+          remarkable parents who touched the lives of many. Join us in honoring
+          their memories
         </p>
 
         <img
@@ -57,7 +57,7 @@
         <!-- biography image with view more link to biography -->
         <div class="container">
           <img
-            src="https://media.istockphoto.com/id/1201144322/photo/headshot-of-african-american-male-in-glasses-posing-in-studio.jpg?s=612x612&w=0&k=20&c=1DYcA9va31VYVszx_pTOIBq_sL217ne1fDJaa_Now1Y="
+            src="{% static 'my-assets/images/flier.jpg'%}"
             alt="biography picture"
             class="d-block mx-auto img-fluid rounded-class"
           />
@@ -85,18 +85,18 @@
           {% for image in images %}
           <div class="" style="width: 49%; " >
             <img
-              src="https://img.freepik.com/free-photo/trees-with-moon-background_1048-2654.jpg?size=626&ext=jpg&ga=GA1.2.120896997.1707432117&semt=ais"
+              src="{{image.url}}"
               class="rounded-class img-fit-onboarding " 
               alt=""
             />
             <p class="text-center my-3 gallery-images-text">
-              Mr Adebayo & His Wife
+              {{image.caption}}
             </p>
           </div>
           {% endfor %}  
         </div>
 
-        <!-- <div
+        <div
           class=" my-5"
         style=" width: 100%; display: flex;gap:1.5rem; justify-content: space-between ; align-items: center;" >
           <button
@@ -117,7 +117,7 @@
           <a href="{% url 'upload:gallery' %}" class=" text-center" style="color: #336799;font-size: .8em; width: 50%;" >
             View More in Gallery
           </a>
-        </div> -->
+        </div>
       </div>
 
       <!-- tribute section -->
@@ -134,39 +134,33 @@
   >
     <div class="carousel-inner">
       {% for tribute in tributes %}
-      <div class="carousel-item active">
+      <div class="carousel-item">
         <img
           src="{% static 'my-assets/images/Quote Left.png' %}"
-          alt=""
+          alt="Quote"
           class="d-block mx-auto"
         />
         <article class="text-center article-text">
           {{tribute.tribute}}
         </article>
-        <p class="text-center label-text mt-3">Mr Idris Musa</p>
+        <p class="text-center label-text mt-3">{{tribute.writer}}</p>
         <p class="text-center font-body" style="color: #504d4d">
-          Family Friend
+          {{tribute.relationship}}
         </p>
       </div>
       {% endfor %}
-      <!-- <div class="carousel-item">
+      <div class="carousel-item active">
         <img
-          src="../static/my-assets/images/Quote Left.png"
-          alt=""
+          src="{% static 'my-assets/images/Quote Left.png' %}"
+          alt="Quote"
           class="d-block mx-auto"
         />
         <article class="text-center article-text">
-          second slide
-          Mr Adebayo Awolaru was born on 24 April in Lagos State. From an
-          early age his passion for Education was evident, laying the
-          foundation for a remarkable journey ahead.
+          <strong>...</strong>
         </article>
-        <p class="text-center label-text mt-3">Mr Idris Musa</p>
-        <p class="text-center font-body" style="color: #504d4d">
-          Family Friend
-        </p>
+        
       </div>
-      <div class="carousel-item">
+      <!-- <div class="carousel-item">
         <img
           src="../static/my-assets/images/Quote Left.png"
           alt=""
