@@ -80,7 +80,10 @@ gap: 2rem;
 
 .img-flex{
    display:flex;
+   justify-content: space-between;
    flex-wrap: wrap;
+   gap: .3rem;
+   /* flex-basis: 25%; */
 
    /* justify-content: center; */
 }
@@ -136,5 +139,28 @@ gap: 2rem;
       width: 100%;
       object-fit: cover;
       max-width: 200px;
+   }
+ }
+
+ @media (min-width: 320px) {  /* Targets small screens (768px and up) */
+   
+   .img-fit{
+      height: 100px;
+      width: 32%;
+      /* flex-basis: 25%; */
+      object-fit: cover;
+      max-width: 200px;
+   }
+ }
+
+ 
+ @media (min-width: 1440px) {  /* Targets large screens (768px and up) */
+   
+   .img-fit{
+      height: 300px;
+      width: 32%;
+      /* flex-basis: 25%; */
+      object-fit: cover;
+      max-width: 300px;
    }
  }
