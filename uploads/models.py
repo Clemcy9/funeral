@@ -6,6 +6,9 @@ from cloudinary.models import CloudinaryField
 relation = [
     ('', 'Select relationship status'),
     ('son', 'son'),
+    ('brother', 'brother'),
+    ('sister', 'sister'),
+    ('husband', 'husband'),
     ('daughter', 'daughter'),
     ('son_inlaw', 'son inlaw'),
     ('daughter_inlaw', 'daughter inlaw'),
