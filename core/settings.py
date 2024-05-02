@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import cloudinary
-          
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates', '/home/melcat/funeral/templates'],
+        'DIRS': ['templates', '/home/memorys/funeral/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
     # psql "postgres://default:gxNF9jPMH0tz@ep-spring-truth-a4zzc8m6.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
-    
+
 }
 
 
@@ -133,8 +133,8 @@ STATIC_ROOT= BASE_DIR / 'static_media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # cloudinary settings
-cloudinary.config( 
-  cloud_name = "drl8qtk5b", 
-  api_key = "465532139864792", 
-  api_secret = "BLiPgy4Ijs2aEeVpOlZ2-8axwUw" 
+cloudinary.config(
+  cloud_name = "drl8qtk5b",
+  api_key = "465532139864792",
+  api_secret = "BLiPgy4Ijs2aEeVpOlZ2-8axwUw"
 )
